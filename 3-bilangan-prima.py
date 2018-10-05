@@ -1,13 +1,10 @@
-def primeNumber(number):
-  totalFactor = 0
-
-  for i in range(1, number + 1):
-    if number % i == 0:
-      totalFactor = totalFactor + 1
-  
-  if totalFactor == 2:
-    return True
-  return False
+def primeNumber(N):
+  if N <= 1:
+    return False
+  for i in range(2, N):
+    if N % i == 0:
+      return False
+  return True
 
 # Driver Code
 print(primeNumber(1)) # False
