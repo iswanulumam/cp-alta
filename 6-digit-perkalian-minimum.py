@@ -10,8 +10,6 @@ def digitPerkalianMinimum(angka):
         minValue = len(lengStr)
   return result
       
-
-
 # Driver Code
 print(digitPerkalianMinimum(24)) # 2
 print(digitPerkalianMinimum(90)) # 3
