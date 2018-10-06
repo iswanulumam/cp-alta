@@ -1,6 +1,17 @@
-def checkAB(num):
-  # you can only write your code here!
-  pass
+def checkAB(str):
+  ab = [[], []]
+
+  for i in range(0, len(str)):
+    if str[i] == 'a':
+      ab[0].append(i)
+    elif str[i] == 'b':
+      ab[1].append(i)
+
+  for i in ab[0]:
+    for j in ab[1]:
+      if abs(i - j) > 3:
+        return True
+  return False
 
 # Driver Code
 print(checkAB('lane borrowed')) # True
