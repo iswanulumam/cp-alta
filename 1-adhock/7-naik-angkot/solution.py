@@ -8,7 +8,6 @@ def naikAngkot(arrPenumpang):
 
   for arr in arrPenumpang:
     mapper = {}
-
     mapper['penumpang'] = arr[0]
     mapper['naikDari'] = arr[1]
     mapper['tujuan'] = arr[2]
