@@ -83,5 +83,21 @@ asterik_lima(5)
 *****
 '''
 
+def pascal(N):
+  for i in range(1, N + 1):
+    list = []
+    for j in range(1, i + 1):
+      list.append("*")
+    print((" " * (N - i)) + (" ".join(list)))
+
+pascal(5)
+'''
+    1
+   1 1
+  1 2 1
+ 1 3 3 1
+1 4 6 4 1
+'''
+
 
 
