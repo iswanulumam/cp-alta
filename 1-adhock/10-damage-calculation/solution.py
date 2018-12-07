@@ -1,12 +1,12 @@
-def balikKata(kata):
-  reverse = ''
-  for i in range(len(kata)-1, -1, -1):
-    reverse += kata[i]
-  return reverse
+def attack (damage) :
+  return damage * 2
+
+def damageCalculation (numberOfAttacks, damagePerAttack) :
+  return (numberOfAttacks * damagePerAttack) - attack(numberOfAttacks)
 
 # Driver Code
-print(balikKata('Hello World and Coders')) # sredoC dna dlroW olleH
-print(balikKata('John Doe')) # eoD nhoJ
-print(balikKata('I am a bookworm')) # mrowkoob a ma I
-print(balikKata('Coding is my hobby')) # ybboh ym si gnidoC
-print(balikKata('Super')) # repuS
+print(damageCalculation(9, 25)) # 207
+
+print(damageCalculation(10, 4)) # 20
+
+print(damageCalculation(5, 20)) # 90

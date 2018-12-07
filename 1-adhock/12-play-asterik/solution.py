@@ -83,7 +83,9 @@ asterik_lima(5)
 *****
 '''
 
+# pascal triangle
 def pascal(N):
+  init = 1
   for i in range(1, N + 1):
     list = []
     for j in range(1, i + 1):
