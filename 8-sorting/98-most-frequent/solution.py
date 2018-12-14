@@ -1,3 +1,4 @@
+# selection sort
 def sorting(arrNumber):
   for i in range(len(arrNumber)):
     min_idx = i
