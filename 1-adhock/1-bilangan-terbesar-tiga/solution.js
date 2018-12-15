@@ -1,12 +1,12 @@
 function bilanganTerbesarTiga(a, b, c) {
-  maks = a;
+  maks = a
   if (b > maks) {
-    maks = b;
+    maks = b
   }
   if (c > maks) {
-    maks = c;
+    maks = c
   }
-  return maks;
+  return maks
 }
 
 console.log(bilanganTerbesarTiga(1, 2, 3)) // 3
