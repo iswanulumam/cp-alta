@@ -7,7 +7,7 @@ func solve(start int, end int, close int, members map[string]int) {
 		if i%close == 0 {
 			fmt.Printf("Tanggal %d: Tempat Fitnes Tutup\n", i)
 		} else {
-			var name []string = nil
+			var name []string
 			for key := range members {
 				if (i-start)%members[key] == 0 {
 					name = append(name, key)
@@ -19,8 +19,10 @@ func solve(start int, end int, close int, members map[string]int) {
 }
 
 func main() {
-	// cara horizontal
-	members := make(map[string]int)
+	var members = map[string]int{}
+	// members := make(map[string]int)
+	// members := map[string]int{}
+
 	members["Tono"] = 2
 	members["Anton"] = 4
 	members["Budi"] = 5
