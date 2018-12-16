@@ -1,6 +1,5 @@
 
 def solve(start, end, close, member):
-  memberCounter = member.copy()
   for i in range(start, end + 1):
     print(f'Tanggal {i}: ', end='')
     if i % close == 0:
