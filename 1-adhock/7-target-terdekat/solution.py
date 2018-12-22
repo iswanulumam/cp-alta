@@ -18,7 +18,6 @@ def targetTerdekat(arr):
 
   return 0 if result == 999 else result
 
-
 # Driver Code
 print(targetTerdekat([' ', ' ', 'o', ' ', ' ', 'x', ' ', 'x'])) # 3
 print(targetTerdekat(['o', ' ', ' ', ' ', 'x', 'x', 'x'])) # 4
