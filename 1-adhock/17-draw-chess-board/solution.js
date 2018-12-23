@@ -18,7 +18,6 @@ function drawChessBoard() {
 drawChessBoard();
 
 /*
-
  # # # #
 # # # # 
  # # # #
@@ -27,5 +26,4 @@ drawChessBoard();
 # # # # 
  # # # #
 # # # #
-
 */
