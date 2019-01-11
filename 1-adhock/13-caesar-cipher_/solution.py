@@ -1,5 +1,14 @@
 def caesarCipher(offset, string):
-  pass
+  new_string = ''
+  for c in string:
+    new_ascii = ord(c) + offset
+    if c == ' ':
+      new_string += ' '
+    elif new_ascii > 122:
+      new_string += chr(new_ascii - 26)
+    else:
+      new_string += chr(new_ascii)
+  return new_string
 
 print(caesarCipher(3, 'abc')); # def
 print(caesarCipher(3, 'abc xyz')) # def abc
