@@ -2,6 +2,9 @@ def checkUnik(bilangan):
   faktor = [2, 3, 5]
   divider = 0
 
+  if bilangan == 1:
+    return False
+
   while True:    
     if bilangan % faktor[divider] == 0:
       bilangan = bilangan // faktor[divider]
@@ -18,6 +21,7 @@ def bilanganUnik(N):
     if checkUnik(i):
       unik.append(i)
   return unik
+
 
 # Driver Code
 print(bilanganUnik(10)) # Output: 2 3 4 5 6 8 9 10

@@ -7,20 +7,14 @@ def primeNumber(N):
   return True
 
 def fullPrima(bilangan):
-  digit_prima = {
-    2: True,
-    3: True,
-    5: True,
-    7: True
-  }
-  if primeNumber(bilangan) == False:
+  digit_prima = [2, 3, 5, 7]
+
+  if not primeNumber(bilangan):
     return 'Tidak'
   
-  while bilangan != 0:
-    remainder = bilangan % 10
-    if remainder not in digit_prima:
+  for i in str(bilangan): 
+    if int(i) not in digit_prima:
       return 'Tidak'
-    bilangan = bilangan // 10
 
   return 'Ya'
 

@@ -9,7 +9,7 @@ def checkAB(str):
 
   for i in ab[0]:
     for j in ab[1]:
-      if abs(i - j) > 3:
+      if abs(i - j) == 4:
         return True
   return False
 

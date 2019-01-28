@@ -3,49 +3,19 @@ def highestScore (students):
     return {}
   
   classes = {}
-  max_score = -999
+  max_score = {}
+
   for student in students:
     key = student['class']
     if key in classes:
-      if classes[key]['score'] > max_score:
+      if classes[key]['score'] > max_score[key]:
         classes[key] = { 'name': student['name'], 'score': student['score'] }
     else:
       classes[key] = { 'name': student['name'], 'score': student['score'] }
-      max_score = student['score']
+      max_score[key] = student['score']
   return classes
 
-print(highestScore([])) # {}
-
-print(highestScore([
-  {
-    'name': 'Dimitri',
-    'score': 90,
-    'class': 'foxes'
-  },
-  {
-    'name': 'Alexei',
-    'score': 85,
-    'class': 'wolves'
-  },
-  {
-    'name': 'Sergei',
-    'score': 100,
-    'class': 'foxes'
-  },
-  {
-    'name': 'Anastasia',
-    'score': 78,
-    'class': 'wolves'
-  }
-]))
-
-
-'''
-{
-  foxes: { 'name': 'Dimitri', 'score': 90 },
-  wolves: { 'name': 'Alexei', 'score': 85 }
-}
-'''
+# print(highestScore([])) # {}
 
 print(highestScore([
   {
@@ -80,5 +50,35 @@ print(highestScore([
   foxes: { 'name': 'Alexander', 'score': 100 },
   wolves: { 'name': 'Alisa', 'score': 76 },
   tigers: { 'name': 'Viktor', 'score': 80 }
+}
+'''
+
+print(highestScore([
+  {
+    'name': 'Dimitri',
+    'score': 90,
+    'class': 'foxes'
+  },
+  {
+    'name': 'Alexei',
+    'score': 85,
+    'class': 'wolves'
+  },
+  {
+    'name': 'Sergei',
+    'score': 100,
+    'class': 'foxes'
+  },
+  {
+    'name': 'Anastasia',
+    'score': 78,
+    'class': 'wolves'
+  }
+]))
+
+'''
+{
+  'foxes': {'name': 'Sergei', 'score': 100},
+  'wolves': {'name': 'Alexei', 'score': 85}
 }
 '''

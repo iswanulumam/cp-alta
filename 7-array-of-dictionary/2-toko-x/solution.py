@@ -60,7 +60,7 @@ print(countProfit([
   totalProfit: 0 } ]
 '''
 
-# print(countProfit([{'name': 'Windi', 'product': 'Sepatu Stacattu', 'amount': 8}, {'name': 'Vanessa', 'product': 'Sepatu Stacattu', 'amount': 10}, {'name': 'Rani', 'product': 'Sweater Uniklooh', 'amount': 1}, {'name': 'Devi', 'product': 'Baju Zoro', 'amount': 1}, {'name': 'Lisa', 'product': 'Baju Zoro', 'amount': 1}]))
+print(countProfit([{'name': 'Windi', 'product': 'Sepatu Stacattu', 'amount': 8}, {'name': 'Vanessa', 'product': 'Sepatu Stacattu', 'amount': 10}, {'name': 'Rani', 'product': 'Sweater Uniklooh', 'amount': 1}, {'name': 'Devi', 'product': 'Baju Zoro', 'amount': 1}, {'name': 'Lisa', 'product': 'Baju Zoro', 'amount': 1}]))
 '''
  [ { 'product': 'Sepatu Stacattu',
      shoppers: [ 'Windi' ],
@@ -75,7 +75,7 @@ print(countProfit([
      leftOver: 0,
      totalProfit: 175000 } ]
 '''
-# print(countProfit([{'name': 'Windi', 'product': 'Sepatu Naiki', 'amount': 5}]))
+print(countProfit([{'name': 'Windi', 'product': 'Sepatu Naiki', 'amount': 5}]))
 '''
  [ { 'product': 'Sepatu Stacattu',
      shoppers: [],

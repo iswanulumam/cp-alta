@@ -7,7 +7,7 @@ def changeMe(arr) :
   if len(arr) == 0:
     print('')
   for i in range(0, len(arr)):
-    print(f'{i + 1} {arr[i][0]} {arr[i][0]}:')
+    print(f'{i + 1} {arr[i][0]} {arr[i][1]}:')
     myDic = {
       'firstName': 'invalid' if len(arr[i]) < 1 == None else arr[i][0],
       'lastName': 'invalid' if len(arr[i]) < 2 == None else arr[i][1],
