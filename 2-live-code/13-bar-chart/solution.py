@@ -1,7 +1,7 @@
 def generateBarChart(value):
   max_bar_value = max(value)
   for i in range(max_bar_value, -1, -1):
-    paper = f'{i}|'
+    paper = str(i) + '|'
     for j in range(0, len(value)):
       if value[j] >= max_bar_value:
         paper += ' III '
