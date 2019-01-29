@@ -39,7 +39,9 @@ def validasiLogin(email, password):
 
 
 print(validasiLogin('johndoe@gmail.com','123456')) 
-# {'pesan': [], 'status': True}                                                                      
+# {'pesan': [], 'status': True}                        
+
+#                                               
 print(validasiLogin('jane@gmail.com','1245')) 
 # {'pesan': ['password tidak valid'], 'status': False  
 print(validasiLogin('johndoe_gmail.com','123456')) 

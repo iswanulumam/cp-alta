@@ -14,7 +14,6 @@ def graduates (students):
         classes[key].append({ 'name': student['name'], 'score': student['score'] })
   return classes 
 
-
 print(graduates([])) # {}
 
 print(graduates([
