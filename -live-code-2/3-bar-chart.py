@@ -1,21 +1,19 @@
 def generateBarChart(value):
-  max_value = max(value)
-
-  for i in range(max_value, -1, -1):
+  max_bar_value = max(value)
+  for i in range(max_bar_value, -1, -1):
     paper = f'{i}|'
     for j in range(0, len(value)):
-      if value[j] >= max_value:
+      if value[j] >= max_bar_value:
         paper += ' III '
       else:
         paper += '     '
     if i == 0:
       value_str = list(map(str,  value))
       paper = '0|-(' + ')--('.join(value_str) + ')-\n'
-    max_value -= 1
+    max_bar_value -= 1
     print(paper)
 
 generateBarChart([3, 6, 4, 7, 2])
-
 '''
 7|                III      
 6|      III       III      

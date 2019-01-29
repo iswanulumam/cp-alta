@@ -1,13 +1,11 @@
-import math, json 
-
 def recursiveFormatDuration(seconds):
   if seconds >= 3600:
     return f'{seconds // 3600} jam ' + recursiveFormatDuration(seconds % 3600)
   elif seconds >= 60:
     return f'{seconds // 60} menit ' + recursiveFormatDuration(seconds % 60)
   elif seconds > 0:
-    return f'{seconds} detik'
-  elif seconds == 0:
+    return f'{seconds} detik '
+  else:
     return ''
 
 print(recursiveFormatDuration(86400)) # 24 jam
