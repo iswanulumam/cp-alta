@@ -1,17 +1,3 @@
-/**
-Participants Summary
---------------------
-Diberikan data dalam bentuk array multidimensi yang berisi
-orang-orang yang akan ikut dalam Hackathon yang
-diselenggarakan bulan depan.
-
-Implementasikan function `participantsSummary` untuk
-mengeluarkan laporan negara mana saja yang mengikuti,
-ada berapa orang yang mewakili negara tersebut dan
-nama peserta dari negara tersebut
-
-Contoh ada di test cases
-*/
 
 function participantsSummary (data) {
   if (data.length == 0) {

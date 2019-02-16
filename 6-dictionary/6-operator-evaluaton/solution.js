@@ -1,13 +1,3 @@
-/*
-----------------------------
-ROCKET - Operation Evaluator
-----------------------------
-PROBLEM
-=======
-Proses nested object di bawah ini menjadi operasi matematika dan hitung hasil akhirnya!
-diberikan operator +, -, *, dan /. Abaikan pembulatan dan biarkan angka koma tetap ada.
-Wajib menggunakan metode rekursif!
-*/
 
 function operationEvaluator(operation) {
   if (typeof operation == 'number') {
