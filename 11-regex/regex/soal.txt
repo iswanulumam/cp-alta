@@ -1,0 +1,47 @@
+Pencarian Identitas Transaksi
+
+Diberikan sebuah function "cekDataTransaksi(logs)" yang menerima 1 argumen berupa List catatan log transaksi penjualan pulsa pada Perusahan Telekomunikasi. Function akan mengembalikan sebuah Dictionary yang memiliki attribute "id_transaksi", "id_order", "nomor_seri", "nomor_referensi", dan "success".
+
+Syarat:
+- "id_transaksi" memiliki format "Transaction #<id_transaksi>": (contoh: "Transaction #14879")
+- "id_order" memiliki format "trx_id = <kode_partner>-<nama_cluster>|<kode_cluster>-<id_transaksi>": (contoh: "trx_id = YPSTRX-Indragiri|IDG-14879")
+- "nomor_seri" memiliki format "SN:<nomor_seri>" (contoh: "SN:94309403940394039403")
+- "nomor_referensi" memiliki format "Ref Id. :<nomor_referensi>" (contoh: "Ref Id. :394039403")
+- "success" bernilai "True" hanya jika "nomor_seri" tidak bernilai "None". Selain itu bernilai "False".
+
+
+=========================================================
+Validasi Login Sistem
+
+Joni seorang system-security di perusahan ABCD dan mendapat tugas untuk meningkatkan keamanan halaman login pada website yang diakses oleh para karyawan perusahaan. Joni harus membuat sebuah fungsi "validasiLogin(email, password)". Function akan menerima argument "email" dan "password" serta mengembalikan nilai Dictionary yang terdiri dari "status" (Boolean) dan "pesan" (List).
+
+Syarat:
+- Email harus harus valid sesuai standar umum (<identitas>@<domain>.<tld>)
+- Password harus minimal 6 karakter, maksimal 10 karakter dan boleh terdiri dari huruf atau angka ataupun kombinasi angka dan huruf
+- Login sukses hanya jika validasi argument dipenuhi dan data karyawan ditemukan pada database.
+
+
+Email kompleks: [\w\.\-_]+@[\w\.\-_]+(\.)(\w{3,5}|(\w{2})|(\w{2}))$
+Email simple: [\w\.-]+@[\w\.-]+
+Password kompleks (alphanumeric, min.4, max.8) : ^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,8}$
+Password simple (min. 6, max.10): ^[a-zA-Z0-9]{6,10}$
+
+=========================================================
+Validasi Tanggal Lahir
+
+Tia seorang staff IT support pada perusahaan XYZ dan ditugaskan untuk melakukan pengecekan informasi "tanggal lahir" karyawan pada data yang akan diinput pada software milik HRD (Human and Resources Department). Tia harus mempercepat proses validasi "tanggal lahir" tersebut dengan membuat sebuah fungsi "validasiTanggalLahir(arr)". Fungsi akan mengembalikan dictionary untuk data "valid" dan "invalid" (dimana masing-masing berupa List).
+
+Jika ada "tanggal lahir" yang tidak valid, maka perlu diberi penjelasan mengapa tanggal lahir tersebut tidak valid (contoh: ['penunjuk hari dalam bulan terkait tidak valid (tahun kabisat']) ).
+
+Syarat:
+- Tanggal lahir memiliki format: YYYY-MM-DD (contoh: 1999-10-31)
+- Tahun yang diijinkan antara 1900 s/d 2099
+- Perhatikan jika input tahun yang ditentukan merupakan "Tahun Kabisat" (terdapat 29 hari pada bulan Februari)
+- Bulan yang memiliki jumlah 31 hari hanyalah Januari, Maret, Mei, Juli, Agustus, Oktober, dan Desember. 
+
+
+Tanggal: ^(19|20)\d\d[- /.](0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])$
+
+
+=========================================================
+
