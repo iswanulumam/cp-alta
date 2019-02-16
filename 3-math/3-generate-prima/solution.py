@@ -15,5 +15,5 @@ def generatePrime(N):
   
   return primesNumber
 
-print(generatePrime(17))
-print(generatePrime(41))
+print(generatePrima(17)) # 2 3 5 7 11 13 17
+print(generatePrima(41)) # 2 3 5 7 11 13 17 19 23 29 31 37 41
