@@ -1,7 +1,3 @@
-/**
- * 
- * @author: Iswanul Umam - Red Fox
- */
 
 function tree(start, level, divider) {
   let checkNumber = function (n, k, s) {
@@ -35,8 +31,7 @@ function tree(start, level, divider) {
   return total;
 }
 
-// driver code -----------------------------------
-
+/** DRIVER CODE */
 console.log(tree(1, 6, 3))  //output: 3
 console.log(tree(1, 6, 2))  //output: 6
 

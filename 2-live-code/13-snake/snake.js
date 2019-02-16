@@ -1,7 +1,3 @@
-/*
-
-@ Iswanul Umam - Red Fox
-*/
 
 function generateMark (row, col) {
   let result = [];
