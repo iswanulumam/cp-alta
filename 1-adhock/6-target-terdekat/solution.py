@@ -1,18 +1,17 @@
 def targetTerdekat(arr):
   result = 999
-  mapper = {
-    'o': [],
-    'x': [],
-  }
+  
+  position_o = []
+  position_x = []
 
   for i in range(0, len(arr)):
     if arr[i] == 'o':
-      mapper['o'].append(i)
+      position_o.append(i)
     elif arr[i] == 'x':
-      mapper['x'].append(i)
+      position_x.append(i)
   
-  for o in mapper['o']:
-    for x in mapper['x']:
+  for o in position_o:
+    for x in position_x:
       if abs(o - x) < result:
         result = abs(o - x)
 

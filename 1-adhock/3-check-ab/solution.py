@@ -1,14 +1,15 @@
 def checkAB(str):
-  ab = [[], []]
+  position_a = []
+  position_b = []
 
   for i in range(0, len(str)):
     if str[i] == 'a':
-      ab[0].append(i)
+      position_a.append(i)
     elif str[i] == 'b':
-      ab[1].append(i)
+      position_b.append(i)
 
-  for i in ab[0]:
-    for j in ab[1]:
+  for i in position_a:
+    for j in position_b:
       if abs(i - j) == 4:
         return True
   return False
