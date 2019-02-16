@@ -5,6 +5,7 @@ def uniqueFinder(sentence) :
   result = []
   mapper = {}
   words = sentence.split(' ')
+  
   for word in words:
     key = word.lower()
     if key not in mapper:

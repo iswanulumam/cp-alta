@@ -24,6 +24,6 @@ def bilanganUnik(N):
 
 
 # Driver Code
-print(bilanganUnik(10)) # Output: 2 3 4 5 6 8 9 10
-print(bilanganUnik(20)) # Output: 2 3 4 5 6 8 9 10 12 15 16 18 20
+print(bilanganUnik(10)) # 2 3 4 5 6 8 9 10
+print(bilanganUnik(20)) # 2 3 4 5 6 8 9 10 12 15 16 18 20
 

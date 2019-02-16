@@ -28,6 +28,6 @@ func bilanganUnik(bil int) {
 }
 
 func main() {
-	// bilanganUnik(10) // Output: 2 3 4 5 6 8 9 10
-	bilanganUnik(20) // Output: 2 3 4 5 6 8 9 10 12 15 16 18 20
+	bilanganUnik(10) // 2 3 4 5 6 8 9 10
+	bilanganUnik(20) // 2 3 4 5 6 8 9 10 12 15 16 18 20
 }

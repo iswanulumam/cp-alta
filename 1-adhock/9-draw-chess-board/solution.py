@@ -1,4 +1,4 @@
-def draw():
+def drawChessBoard():
   for i in range(1, 9):
     result = []
     for j in range(1, 9):
@@ -8,7 +8,7 @@ def draw():
         result.append(" ")
     print(''.join(result))
 
-draw()
+drawChessBoard()
 '''
  # # # #
 # # # # 
