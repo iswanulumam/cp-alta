@@ -1,6 +1,4 @@
 
-
-
 function spiralOrder(matrix) {
   let ans = new Array();
   if (matrix.length == 0) return ans;
