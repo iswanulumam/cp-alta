@@ -1,41 +1,18 @@
-/*
-===========================
-Initial Grouping Descending
-==========================
-[INSTRUCTION]
-Disediakan sebuah function initialGroupingDescending yang bertugas untuk menerima sebuah parameter
-berupa array satu dimensi berisikan nama-nama. Function initialGroupingDescending akan
-mengelompokkan nama-nama tersebut berdasarkan huruf depannya dan huruf depan harus terurut dari paling besar/descending dan dipisahkan ke dalam
-array dua dimensi.
-[EXAMPLE]
-Input: [‘Budi’, ‘Badu’, ‘Joni’, ‘Jono’]
-Output:
-[
-[ ‘J’, ‘Joni’, ‘Jono’ ],
-[ ‘B’, ‘Budi’, ‘Badu’ ]
-]
-Kamu tidak perlu peduli dengan urutan alphabet nama siapa yang keluar terlebih dahulu!
-RULES:
-- Dilarang menggunakan sintaks Set atau Regex
-- Dilarang menggunakan built in function sort
-*/
 
-
-function initialGroupingDescending(studentsArr) {
-  
-  var sort = function (arr) {
-    for (let i = 0; i < arr.length; i++) {
-      for (let j = i + 1; j < arr.length; j++) {
-        if (arr[j] > arr[i]) {
-          let temp = arr[j];
-          arr[j] = arr[i];
-          arr[i] = temp;
-        }
+function sort (arr) {
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[j] > arr[i]) {
+        let temp = arr[j];
+        arr[j] = arr[i];
+        arr[i] = temp;
       }
     }
-    return arr;
   }
+  return arr;
+}
 
+function initialGroupingDescending(studentsArr) {
   let sorted = sort(studentsArr);
   let result = [];
   
