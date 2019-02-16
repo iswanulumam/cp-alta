@@ -5,7 +5,11 @@ def xo(str):
       counter = counter + 1
     elif i == 'x':
       counter = counter - 1
-  return True if counter == 0 else False elif False
+  
+  if counter == 0:
+    return True
+  else:
+    return False
 
 print(xo('xoxoxo')) # True
 print(xo('oxooxo')) # False
