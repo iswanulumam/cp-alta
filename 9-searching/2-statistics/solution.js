@@ -1,23 +1,3 @@
-/*
-====================================
-Number and Array Mastery: Statistics
-====================================
-Name Here :_____________
-[INSTRUKSI]
-Tersedia 3 input:
-1) kata (2 kemungkinan: 'min' atau 'max')
-2) array berisi angka-angka positif
-3) array berisi angka-angka positif
-Output:
-Jika kata adalah 'min', maka return hasil terkecil dari dua array yang ada
-Jika kata adalah 'max', maka return hasil terbesar dari dua array yang ada
-[CONTOH]
-1) 'max', [6, 2, 4, 10, 8, 2] , [4, 7, 9, 19]  -->   10 , 19
-2) 'min', [5, 11, 18, 6] , [3, 9, 10, 13]  -->    5 , 13
-*/
-
-// console.log(min([8, 15, 17, 9]));
-// console.log(max([8, 15, 17, 9]));
 
 function statistik(kata, arr1, arr2) {
   var min = function(arr) {

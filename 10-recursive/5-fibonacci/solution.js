@@ -1,6 +1,5 @@
 
 // fibonacci using naive solution
-
 var yourself = {
   fibonacci : function(n) {
       if (n === 0) {
@@ -14,8 +13,7 @@ var yourself = {
   }
 };
 
-// @ fibonacci using dp solution
-
+// fibonacci using dp solution
 var yourself_ = {
   fibonacci : function(n) {
       let f = [];
