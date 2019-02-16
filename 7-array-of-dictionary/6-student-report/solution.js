@@ -1,24 +1,3 @@
-/*
-
-Students Report
-
-Diberikan sebuah function bernama getReport.
-Function akan menerima sebuah parameter array of object dengan format:
-[
-  { name: <nama student>, score: <score student>, classCode: <kode kelas>},
-  { name: <nama student>, score: <score student>, classCode: <kode kelas>},
-...
-]
-Data di atas merupakan campuran seluruh nilai student dari kelas manapun.
-Function akan memproses array of object tersebut untuk membuat sebuah report dalam bentuk array of object dengan format:
-[
-  { classCode: <kode kelas>, passed: <array berisi nama student yg lulus>, failed: <array berisi nama student yg failed> },
-  { classCode: <kode kelas>, passed: <array berisi nama student yg lulus>, failed: <array berisi nama student yg failed> },
-...
-]
-Data yang diharapkan merupakan akumulasi student yang lulus dan tidak dari setiap kelas.
-Standard kelulusan adalah minimum 70.
-*/
 
 function getReport(studentGrades) {
   let data = [];
