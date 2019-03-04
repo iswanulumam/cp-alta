@@ -1,7 +1,4 @@
-
-
-
-function valid (arr) {
+function isvalid (arr) {
   let valid = true;
   for (let row of arr) {
     let sorted = row.sort((a, b) => a - b).join('');
@@ -25,9 +22,9 @@ function sudoku(rows){
       columns[i].push(rows[j][i]);
     }
   }
+  console.log('>>>>', blocks)
 
-
-  let valid = valid(rows) && valid(columns) && valid(blocks);
+  let valid = isvalid(rows) && isvalid(columns) && isvalid(blocks);
   return valid ? `Hore, selesai :)` : `Coba lagi :(`;
 }
 
@@ -41,7 +38,7 @@ let done = [ [ '1', '4', '5', '8', '9', '2', '6', '7', '3' ],
             [ '4', '3', '8', '7', '2', '9', '5', '6', '1' ],
             [ '6', '2', '1', '3', '5', '8', '9', '4', '7' ] ];
 
-console.log(sudoku(done));
+// console.log(sudoku(done));
 
 console.log(sudoku([[5, 3, 4, 6, 7, 8, 9, 1, 2], 
                       [6, 7, 2, 1, 9, 5, 3, 4, 8],
@@ -53,12 +50,12 @@ console.log(sudoku([[5, 3, 4, 6, 7, 8, 9, 1, 2],
                       [2, 8, 7, 4, 1, 9, 6, 3, 5],
                       [3, 4, 5, 2, 8, 6, 1, 7, 9]])); // "Hore, selesai :)"
 
-console.log(sudoku([[5, 3, 4, 6, 7, 8, 9, 1, 2], 
-                      [6, 7, 2, 1, 9, 0, 3, 4, 9],
-                      [1, 0, 0, 3, 4, 2, 5, 6, 0],
-                      [8, 5, 9, 7, 6, 1, 0, 2, 0],
-                      [4, 2, 6, 8, 5, 3, 7, 9, 1],
-                      [7, 1, 3, 9, 2, 4, 8, 5, 6],
-                      [9, 0, 1, 5, 3, 7, 2, 1, 4],
-                      [2, 8, 7, 4, 1, 9, 6, 3, 5],
-                      [3, 0, 0, 4, 8, 1, 1, 7, 9]])); // "Coba lagi :("
+// console.log(sudoku([[5, 3, 4, 6, 7, 8, 9, 1, 2], 
+//                       [6, 7, 2, 1, 9, 0, 3, 4, 9],
+//                       [1, 0, 0, 3, 4, 2, 5, 6, 0],
+//                       [8, 5, 9, 7, 6, 1, 0, 2, 0],
+//                       [4, 2, 6, 8, 5, 3, 7, 9, 1],
+//                       [7, 1, 3, 9, 2, 4, 8, 5, 6],
+//                       [9, 0, 1, 5, 3, 7, 2, 1, 4],
+//                       [2, 8, 7, 4, 1, 9, 6, 3, 5],
+//                       [3, 0, 0, 4, 8, 1, 1, 7, 9]])); // "Coba lagi :("

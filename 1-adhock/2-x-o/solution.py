@@ -5,7 +5,6 @@ def xo(str):
       counter = counter + 1
     elif i == 'x':
       counter = counter - 1
-  
   if counter == 0:
     return True
   else:

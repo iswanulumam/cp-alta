@@ -1,5 +1,4 @@
 def shoppingTime(memberId, money):
-  
   item = [
     {'name': 'Sepatu Stacattu', 'price': 1500000},
     {'name': 'Baju Zoro', 'price': 500000},
@@ -48,6 +47,9 @@ print(shoppingTime('82Ku8Ma742', 170000))
   [ 'Casing Handphone' ],
  changeMoney: 120000 }
 '''
-print(shoppingTime('', 2475000)) # Mohon maaf, toko X hanya berlaku untuk member saja
-print(shoppingTime('234JdhweRxa53', 15000)) # Mohon maaf, uang tidak cukup
-# print(shoppingTime()) # Mohon maaf, toko X hanya berlaku untuk member saja
+print(shoppingTime('', 2475000))
+# Mohon maaf, toko X hanya berlaku untuk member saja
+print(shoppingTime('234JdhweRxa53', 15000))
+# Mohon maaf, uang tidak cukup
+print(shoppingTime())
+# Mohon maaf, toko X hanya berlaku untuk member saja
