@@ -5,7 +5,6 @@ function generateBarChart(value) {
   for (let i = max; i >= 0; i--) {
     let paper = `${i}|`;
     for (let j = 0; j < value.length; j++) {
-      // console.log(max);
       if (value[j] >= max) {
         paper += ` III `;
       } else {
