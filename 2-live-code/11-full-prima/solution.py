@@ -17,13 +17,13 @@ def fullPrima(bilangan):
       return 'Tidak'
   return 'Ya'
 
-# print(fullPrima(2)) # Ya
-# print(fullPrima(3)) # Ya
-# print(fullPrima(11)) # Tidak
-# print(fullPrima(13)) # Tidak
-# print(fullPrima(23)) # Ya
-# print(fullPrima(29)) # Tidak
-# print(fullPrima(37)) # Ya
-# print(fullPrima(41)) # Tidak
-# print(fullPrima(43)) # Tidak
-# print(fullPrima(53)) # Ya
+print(fullPrima(2)) # Ya
+print(fullPrima(3)) # Ya
+print(fullPrima(11)) # Tidak
+print(fullPrima(13)) # Tidak
+print(fullPrima(23)) # Ya
+print(fullPrima(29)) # Tidak
+print(fullPrima(37)) # Ya
+print(fullPrima(41)) # Tidak
+print(fullPrima(43)) # Tidak
+print(fullPrima(53)) # Ya

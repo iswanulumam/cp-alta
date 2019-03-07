@@ -1,4 +1,3 @@
-
 function generateBorderBox (N) {
   for (let i = 1; i < N + 1; i++) {
     let line = ``;

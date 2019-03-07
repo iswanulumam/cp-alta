@@ -21,9 +21,7 @@ let table = {
   'H': 7,
 };
 
-
 function placeAvailable(board, xPos, yPos) {
-  // check array 2D
   try {
     if (board[xPos][yPos] != undefined) return true;
   } catch(e) {
