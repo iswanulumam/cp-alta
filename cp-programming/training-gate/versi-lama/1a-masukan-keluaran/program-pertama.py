@@ -1,0 +1,2 @@
+kata = input()
+print(kata)
