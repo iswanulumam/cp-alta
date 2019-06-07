@@ -8,7 +8,6 @@ def sum_pairs(list, sum):
 
 # linier solution
 def linier_solution(list, sum):
-  sum_result = []
   hashTable = {}
 
   for i in range(0, len(list)):
