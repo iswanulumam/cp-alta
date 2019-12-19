@@ -9,9 +9,28 @@ type countrie struct {
 	names []string
 }
 
-func participantsSummary(participant [][]string) string /*map[string]countrie*/ {
-	fmt.Println(participant)
-	return ""
+func participantsSummary(participant [][]string) map[string]countrie {
+	result := map[string]countrie{}
+
+	for _, participantValue := range participant {
+		var (
+			name  string = participantValue[0]
+			state string = participantValue[1]
+		)
+
+		_, exist := result[state]
+		if !exist {
+			newCountrie := countrie{total: 1, names: []string{name}}
+			result[state] = newCountrie
+		} else {
+			var newState = result[state]
+			newState.total++
+			newState.names = append(newState.names, name)
+			result[state] = newState
+		}
+	}
+
+	return result
 }
 
 func main() {
@@ -40,6 +59,7 @@ func main() {
 			}
 		}
 	*/
+	fmt.Println("--")
 	participant2 := [][]string{
 		{"Suzuka", "Japan"},
 		{"Steve", "United Kingdom"},
