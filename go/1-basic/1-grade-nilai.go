@@ -5,9 +5,11 @@ import(
 )
 
 func main() {
-	var studentScore int
-	fmt.Scan(&studentScore)
+	var studentScore int = 80
+	// var alphabet string = "SEPULSA OKE"
+	// fmt.Scan(&studentScore)
 
+	// Your Solution Code Here
 	if studentScore < 0 || studentScore > 100 {
 		fmt.Println("Nilai Invalid")
 	} else if studentScore >= 80 {
@@ -21,6 +23,9 @@ func main() {
 	} else if studentScore >= 0 {
 		fmt.Println("Nilai E")
 	}
+
+	// Output
+	// Nilai A
 
 	fmt.Println(studentScore)
 }

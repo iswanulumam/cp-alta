@@ -1,2 +1,0 @@
-kata = input()
-print(kata)

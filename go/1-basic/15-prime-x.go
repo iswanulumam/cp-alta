@@ -11,7 +11,7 @@ func checkPrime(number int) bool {
 	}
 	sqrtNumber := int(math.Sqrt(float64(number)))
 	for i := 2; i <= sqrtNumber; i++ {
-		if number % i == 0 {
+		if number%i == 0 {
 			return false
 		}
 	}
@@ -21,7 +21,7 @@ func checkPrime(number int) bool {
 func primeX(number int) int {
 	var (
 		counter int
-		primes []int
+		primes  []int
 	)
 
 	for len(primes) < number {
@@ -33,14 +33,18 @@ func primeX(number int) int {
 		}
 	}
 
-	var lastIndex int = primes[len(primes) - 1]
+	var lastIndex int = primes[len(primes)-1]
 	return lastIndex
 }
 
 func main() {
-	fmt.Println(primeX(1)) // 2
-	fmt.Println(primeX(5)) // 11
-	fmt.Println(primeX(8)) // 19
-	fmt.Println(primeX(9)) // 23
+	fmt.Println(primeX(1))  // 2
+	fmt.Println(primeX(5))  // 11
+	fmt.Println(primeX(8))  // 19
+	fmt.Println(primeX(9))  // 23
 	fmt.Println(primeX(10)) // 29
+
+	fmt.Println(checkPrime(3))  // Bilangan Prima
+	fmt.Println(checkPrime(7))  // Bilangan Prima
+	fmt.Println(checkPrime(10)) // Bukan Bilangan Prima
 }
